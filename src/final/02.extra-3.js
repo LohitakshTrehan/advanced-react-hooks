@@ -19,6 +19,7 @@ function useSafeDispatch(dispatch) {
   // after React updates the DOM. Even though this effect does not interact
   // with the dom another side effect inside a useLayoutEffect which does
   // interact with the dom may depend on the value being set
+  //Rect.useLayoutEffect
   React.useEffect(() => {
     mountedRef.current = true
     return () => {
